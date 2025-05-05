@@ -7,11 +7,13 @@ import Form from '@/components/Form';
 import TODOList from '@/components/TODOList';
 
 export default function Page() {
+  const [todos, setTodos] = React.useState<{ id: string; title: string; is_completed: boolean }[]>([]);
+
   return (
     <div className="wrapper">
       <Header />
-      <Form />
-      <TODOList todos={[]} />
+      <Form setTodos={setTodos}/>
+      <TODOList todos={todos} setTodos={setTodos}/>
     </div>
   );
 }
