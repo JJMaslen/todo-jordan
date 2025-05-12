@@ -117,7 +117,7 @@ header {
   max-width: 455px;
   border: 1px solid #c2b39a;
   font-size: 16px;
-  background-color: #0d0d0d;
+  background-color: #222222;
   color: #fff;
   padding: 12px;
 }
@@ -144,11 +144,15 @@ header {
   color: #fff;
   gap: 12px;
   font-size: 16px;
+  height: 100%;
 }
 .todo_items_right {
   gap: 4px;
 }
 .todo_items_right button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
   background-color: transparent;
   color: #fff;
   border: none;

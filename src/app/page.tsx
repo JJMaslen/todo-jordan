@@ -9,10 +9,17 @@ import TODOList from '@/components/TODOList';
 export default function Page() {
   const [todos, setTodos] = React.useState<{ id: string; title: string; is_completed: boolean }[]>([]);
 
+  React.useEffect(() => {
+    const storedTodos = localStorage.getItem("todos");
+    if (storedTodos) {
+      setTodos(JSON.parse(storedTodos))
+    }
+  }, [])
+  
   return (
     <div className="wrapper">
       <Header />
-      <Form setTodos={setTodos}/>
+      <Form todos={todos} setTodos={setTodos}/>
       <TODOList todos={todos} setTodos={setTodos}/>
     </div>
   );
