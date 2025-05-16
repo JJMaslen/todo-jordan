@@ -1,0 +1,39 @@
+.gameContainer {
+    max-width: 600px;
+    margin: 40px auto;
+    padding: 24px;
+    background: #222222;
+    border-radius: 12px;
+    box-shadow: 0 2px 12px rgba(0,0,0,0.08);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+    border: 2px solid #444444;
+}
+
+.game {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
+    width: 100%;
+    gap: 2rem;
+}
+
+.previous {
+    width: fit-content;
+    margin-left: auto;
+    margin-right: 0;
+    min-width: 150px;
+}
+
+.previous ol {
+    list-style-type: none;
+    padding-left: 0;
+    text-align: center;
+}
+
+.gameForm {
+    margin-bottom: 1rem;
+}
