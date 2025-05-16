@@ -1,6 +1,7 @@
 "use client";
 
 import React from 'react';
+import Link from 'next/link';
 import './globals.css';
 import Header from '@/components/Header';
 import Form from '@/components/Form';
@@ -18,6 +19,14 @@ export default function Page() {
   
   return (
     <div className="wrapper">
+      <header>
+        <nav>
+          <ul>
+            <li><Link href="/">Todo List</Link></li>
+            <li><Link href="/higherOrLowerGame">Higher or lower game</Link></li>
+          </ul>
+        </nav>
+      </header>
       <Header />
       <Form todos={todos} setTodos={setTodos}/>
       <TODOList todos={todos} setTodos={setTodos}/>

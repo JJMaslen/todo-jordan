@@ -168,3 +168,9 @@ header {
   width: 16px;
   height: 16px;
 }
+h1 {
+  text-align: center;
+}
+p {
+  text-align: center;
+}
