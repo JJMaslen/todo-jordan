@@ -21,7 +21,7 @@ export default function HigherOrLowerGame() {
                     </nav>
                 </header>
             <h1>Higher or lower!</h1>
-            <p>Lets play a game of higher or lower</p>
+            <p>Lets play a game of higher or lower, guess a number between 1 and 100 to begin!</p>
             <div className="higherOrLowerGame">
                 <HowGame />
             </div>
