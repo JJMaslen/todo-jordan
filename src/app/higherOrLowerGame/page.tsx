@@ -17,6 +17,7 @@ export default function HigherOrLowerGame() {
                         <ul>
                             <li><Link href="/">Todo List</Link></li>
                             <li><Link href="/higherOrLowerGame">Higher or lower game</Link></li>
+                            <li><Link href="/nodeClickAndDrag">Bus Route Creator</Link></li>
                         </ul>
                     </nav>
                 </header>

@@ -1,0 +1,27 @@
+.main {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+}
+
+.nodeClick {
+    background-color: #444444;
+    position: relative;
+    width: 1000px;
+    height: 560px;
+    background-image: url('/playMat.jpg');
+    background-size: cover;
+    background-position: center;
+    flex-shrink: 0;
+}
+
+.sideBar {
+    background-color: #444444;
+    position: static;
+    margin-left: 20px;
+    width: 200px;
+    height: 560px;
+    top: 10;
+    right: 0;
+    flex-shrink: 0;
+}
