@@ -22,7 +22,7 @@ export default function HigherOrLowerGame() {
                     </nav>
                 </header>
             <h1>Higher or lower!</h1>
-            <p>Lets play a game of higher or lower</p>
+            <p>Lets play a game of higher or lower. To begin, enter a number between 1-100</p>
             <div className="higherOrLowerGame">
                 <HowGame />
             </div>
