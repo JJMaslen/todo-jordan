@@ -125,7 +125,6 @@ function NodeClickAndDrag({ nodes, setNodes }: NodeClickAndDragProps) {
                     pointerEvents: "none"
                 }}
             >
-                {/* Existing lines between consecutive nodes */}
                 {nodes.length > 1 &&
                     nodes.slice(1).map((node, i) => (
                         <line
@@ -139,7 +138,6 @@ function NodeClickAndDrag({ nodes, setNodes }: NodeClickAndDragProps) {
                         />
                     ))
                 }
-                {/* Line from last node to first node */}
                 {nodes.length > 1 && (
                     <line
                         key="close"
